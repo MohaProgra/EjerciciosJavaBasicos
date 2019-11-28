@@ -20,7 +20,15 @@ public class EjerciciosBasicosJava {
     }
     
     public int multa (int velocidad, boolean birthday){
-        return 0;
+        if (birthday){//si es mi cumple el guardia me quita 5 de velocidad
+             }
+        if (velocidad <= 60){
+            return 0;
+        }
+        if (velocidad > 60 && velocidad <=80){
+            return 1;
+        }   
+        return 2; //el resto de casos, que son que voy a más de 80
         
         
     }
@@ -33,6 +41,10 @@ public class EjerciciosBasicosJava {
         System.out.print (ejercicios.fiestasArdillas(30, false));
         System.out.print (ejercicios.fiestasArdillas(50, false));
         System.out.print (ejercicios.fiestasArdillas(70, true));
+            //testeo el ejercicio 2
+         System.out.print (ejercicios.multa(60, false));
+         System.out.print (ejercicios.multa(65, false));
+         System.out.print (ejercicios.multa(65, true));
     }
     
 }
