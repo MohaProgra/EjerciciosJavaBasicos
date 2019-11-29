@@ -29,9 +29,17 @@ public class EjerciciosBasicosJava {
             return 1;
         }   
         return 2; //el resto de casos, que son que voy a más de 80
-        
-        
+               
     }
+    
+    public boolean muyVanidoso (int numero){
+        if (numero % 11 == 0 || numero % 11 == 1){
+                return true;
+    }
+    return false;
+     
+    //otra posible solucion mas corta:
+    //return (numero % 11 == 0 || numero % 11 == 1);
     
     /**
      * @param args the command line arguments
@@ -42,9 +50,13 @@ public class EjerciciosBasicosJava {
         System.out.print (ejercicios.fiestasArdillas(50, false));
         System.out.print (ejercicios.fiestasArdillas(70, true));
             //testeo el ejercicio 2
-         System.out.print (ejercicios.multa(60, false));
-         System.out.print (ejercicios.multa(65, false));
-         System.out.print (ejercicios.multa(65, true));
+        System.out.print (ejercicios.multa(60, false));
+        System.out.print (ejercicios.multa(65, false));
+        System.out.print (ejercicios.multa(65, true));
+         //testeo el ejercicio 3
+        System.out.print ("muyVanidoso (22)" + ejercicios.muyVanidoso(22));
+        System.out.print ("muyVanidoso (23)" + ejercicios.muyVanidoso(23));
+             System.out.print ("muyVanidoso (24)" + ejercicios.muyVanidoso(24));
+         
     }
-    
 }
